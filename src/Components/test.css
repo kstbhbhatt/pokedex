@@ -1,0 +1,82 @@
+.type-normal {
+  --color: #c2c2a1;
+}
+
+.type-flying {
+  --color: #bab0d5;
+}
+
+.type-ghost {
+  --color: #735797;
+}
+
+.type-dark {
+  --color: #333;
+}
+
+.type-steel {
+  --color: #ccccde;
+}
+
+.type-ground {
+  --color: #b1736c;
+}
+
+.type-poison {
+  --color: #7c538c;
+}
+
+.type-grass {
+  --color: #48d0b0;
+}
+
+.type-fire {
+  --color: #fb6c6c;
+}
+
+.type-electric {
+  --color: #ffd86f;
+}
+
+.type-fairy {
+  --color: #f469a9;
+}
+
+.type-bug {
+  --color: #c3ce75;
+}
+
+.type-fighting {
+  --color: #d6b591;
+}
+
+.type-water {
+  --color: #609fb5;
+}
+
+.type-psychic {
+  --color: #9b7fa6;
+}
+
+.type-ice {
+  --color: #7fccec;
+}
+
+.type-rock {
+  --color: #a6aab6;
+}
+
+.type-dragon {
+  --color: #f9be00;
+}
+
+div.poke-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  list-style: none;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 10px;
+}

@@ -1,0 +1,100 @@
+.card-container {
+  overflow: hidden;
+  position: relative;
+  color: white;
+  background-color: var(--color);
+  width: 100%;
+  border-radius: 15px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.card-container .card-content {
+  z-index: 2;
+  position: relative;
+  flex-grow: 1;
+  width: 50%;
+}
+
+.card-container .card-left .card-type {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.card-container .card-left .card-type .type {
+  margin: 5px 10px;
+  padding: 5px;
+  width: 100px;
+  line-height: 16px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+
+.card-container .card-right img {
+  max-width: 100%;
+  z-index: 2;
+  position: relative;
+}
+.poke-id {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 400;
+  right: 10px;
+  top: 10px;
+  color: hsla(0, 0%, 100%, 0.2);
+}
+.pokeball {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -30px;
+  bottom: -30px;
+}
+.pokeball::before {
+  content: "";
+  border: 50px solid hsla(0, 0%, 100%, 0.2);
+  border-radius: 50%;
+  z-index: 0;
+  height: 80px;
+  width: 80px;
+  -webkit-clip-path: polygon(
+    0 0,
+    0 40%,
+    50% 40%,
+    50% 60%,
+    0 60%,
+    0 100%,
+    100% 100%,
+    100% 60%,
+    50% 60%,
+    50% 40%,
+    100% 40%,
+    100% 0
+  );
+  clip-path: polygon(
+    0 0,
+    0 40%,
+    50% 40%,
+    50% 60%,
+    0 60%,
+    0 100%,
+    100% 100%,
+    100% 60%,
+    50% 60%,
+    50% 40%,
+    100% 40%,
+    100% 0
+  );
+}
+.pokeball::after {
+  content: "";
+  position: absolute;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  z-index: 0;
+}
