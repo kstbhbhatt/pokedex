@@ -1,11 +1,11 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Test from "./Components/Test";
+import PokeDex from "./Components/PokeDex";
 
 function App() {
   return (
     <div className="App">
-      <Test />
+      <PokeDex />
     </div>
   );
 }

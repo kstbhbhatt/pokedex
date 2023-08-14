@@ -1,0 +1,23 @@
+.progress-bar {
+  margin-left: 20px;
+  width: 100%;
+  background-color: #ddd;
+  height: 6px;
+  border-radius: 3px;
+}
+.progress-bar .progress {
+  height: 100%;
+  border-radius: 3px;
+  animation: fill 0.3s backwards;
+}
+.color-positive {
+  background-color: #5bc686;
+}
+.color-negative {
+  background-color: #fb7171;
+}
+@keyframes fill {
+  from {
+    width: 0;
+  }
+}

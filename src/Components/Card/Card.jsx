@@ -1,13 +1,16 @@
 import React from "react";
 import "./card.css";
 
-function Card({ pokeData }) {
+function Card({ pokeData, onClick }) {
   const { name, id, species, types, sprites } = pokeData;
   const classNames = types.map((type) => `type-${type.type.name}`).join(" ");
 
   const padPokeId = `#${id.toString().padStart(3, "0")}`;
   return (
-    <div className={`card-container ${classNames}`}>
+    <div
+      className={`card-container ${classNames}`}
+      onClick={() => onClick(pokeData)}
+    >
       <div className="pokeball"></div>
       <div className="poke-id">{padPokeId}</div>
       <div className="card-content  card-left">

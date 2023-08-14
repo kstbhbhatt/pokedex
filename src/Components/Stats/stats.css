@@ -1,0 +1,134 @@
+.overlay {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.stats-card {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  max-height: 100vh;
+  width: 95vw;
+  max-width: 800px;
+  position: fixed;
+  z-index: 3;
+  bottom: 0;
+  left: 50vw;
+  max-height: 100vh;
+  background-color: var(--color);
+  animation: pull-up-center 0.3s ease-out both;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.back-button {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  color: white;
+  z-index: inherit;
+  background: none;
+  border: none;
+  font-size: 30px;
+  font-weight: 800;
+}
+.stats-card .card-container {
+  margin: -40px 0 0;
+  transform: translatey(40px);
+  border-radius: 0;
+  padding-bottom: 25vmin;
+  padding-top: 5vmin;
+}
+.stats-card .card-container .card-right {
+  display: none;
+}
+.stats-card .card-container .card-type {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.stats-card .pokeball {
+  right: -40px;
+  bottom: -5px;
+}
+.stats-card .card-container .card-type .type {
+  margin: 5px 5px;
+  padding: 10px;
+  width: 100px;
+  line-height: 18px;
+  height: 40px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+}
+.details {
+  color: #333;
+  padding: 30px;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+  animation: pull-up 0.3s ease-out 0.2s both;
+}
+.details img {
+  position: absolute;
+  bottom: 100%;
+  max-width: 30%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 20vh;
+  margin-bottom: -2rem;
+}
+.details .tabs {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.details .tabs .tabs-button.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  margin-top: -0.5px;
+  left: 0;
+  position: absolute;
+  background-color: #6c79db;
+}
+.tabs .tabs-button {
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  font-size: 18px;
+}
+.tabs .tabs-button:not(.active) {
+  color: #aaa;
+}
+
+@keyframes pull-up-center {
+  from {
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+  }
+}
+@keyframes pull-up {
+  from {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

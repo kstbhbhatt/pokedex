@@ -1,0 +1,10 @@
+.back-button {
+  margin-top: 20px;
+  margin-left: 5px;
+  width: 15px;
+  height: 15px;
+  /* background-color: white; */
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  transform: rotateZ(45deg);
+}

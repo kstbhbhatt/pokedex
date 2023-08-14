@@ -1,0 +1,18 @@
+.about td {
+  padding: 10px;
+}
+table {
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+}
+table td:first-child {
+  width: 25%;
+  text-align: left;
+}
+table td:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
