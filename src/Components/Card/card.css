@@ -100,3 +100,14 @@
   width: 50px;
   z-index: 0;
 }
+@media screen and (max-width: 500px) {
+  .card-container {
+    height: 40vh;
+  }
+  .card-container .card-right {
+    align-self: flex-end;
+  }
+  .card-container .card-right img {
+    margin: 0;
+  }
+}

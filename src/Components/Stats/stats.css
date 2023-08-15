@@ -48,8 +48,11 @@
 .stats-card .card-container .card-right {
   display: none;
 }
+.stats-card .card-container .card-left h1 {
+  margin: 20px 0 -20px;
+}
 .stats-card .card-container .card-type {
-  margin: 30px 0px;
+  margin: 30px 0px 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
