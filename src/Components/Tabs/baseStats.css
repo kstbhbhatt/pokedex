@@ -1,6 +1,8 @@
 .progress-bar {
   margin-left: 20px;
   width: 100%;
+  max-width: 450px;
+  overflow: hidden;
   background-color: #ddd;
   height: 6px;
   border-radius: 3px;
